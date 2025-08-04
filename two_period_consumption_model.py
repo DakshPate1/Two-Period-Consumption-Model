@@ -211,9 +211,11 @@ st.bar_chart(
     }
 )
 
-with st.expander("Notes and tips"):
+with st.expander("📝 Notes and Tips (Click to expand)"):
     st.markdown(
         """
+**⚠️ Important Notes and Tips**
+
 - **Units are arbitrary** (you can treat y₁ and y₂ as currency in any scale).  
 - **y₂ is determined by your choice:**  
     - If "Flat income assumption" is checked, then y₂ = y₁.  
@@ -221,7 +223,11 @@ with st.expander("Notes and tips"):
 - **r is a *net* real rate per period.** If you have an annual real rate of 1.7% and τ in years, set r = 0.017 and τ accordingly.  
 - **τ scales time.** If the second income arrives sooner or later, τ adjusts discounting and the Euler condition accordingly.  
 - Ensure **c₁ and c₂ remain positive** for meaningful utility (the app guards by reporting −∞ utility if not).
-        """
+
+---
+*Click the expander to hide these notes.*
+        """,
+        unsafe_allow_html=False,
     )
 
 # --- Budget Line Plot ---
