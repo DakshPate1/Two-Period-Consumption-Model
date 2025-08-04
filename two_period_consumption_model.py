@@ -90,7 +90,7 @@ def simulate_two_period(y1: float, y2: float, r: float, beta: float, sigma: floa
 # -----------------------------
 st.set_page_config(page_title="Two-Period Consumption Model", page_icon="📈")
 
-st.title("📈 Two-Period Consumption Model (CRRA Utility)")
+st.title("📈 Two-Period Consumption Model")
 st.caption(
     "Interactively explore optimal consumption across two periods. "
     "Adjust incomes, interest rate, time preference, risk aversion, and the time between incomes."
